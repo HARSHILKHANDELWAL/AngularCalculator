@@ -1,0 +1,6 @@
+<div *ngFor="let button of buttonArray" class="operButton" >
+ 
+    <!-- <app-button [value]="button.Symbol"  (buttonInfo)="giveInfo(button)" [id]="'operButton-' + button.Symbol"  (buttonEmitter)="giveValue($event)" ></app-button> -->
+    <app-button [value]="button.Symbol"  (buttonInfo)="giveInfo(button)" [id]="'operButton-' + button.Symbol"  (buttonEmitter)="giveValue(button)" ></app-button>
+
+</div>

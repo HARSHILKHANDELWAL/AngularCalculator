@@ -1,0 +1,24 @@
+<div class="container">
+
+    <div class="display">
+        <app-display [value]="inputValue"></app-display>
+    </div>
+    <div class="calButton">
+        <div class="operationBtn">
+            <app-operational  (addButton)="buttonArray($event)"   (displayValue)="operationClickHandler($event)"></app-operational>
+        
+                </div>
+        <div class="funBtn">
+            <app-function (addButton)="buttonArray($event)" (displayValue)="functionClickHandler($event)"></app-function>
+        </div>
+  
+        <div class="numButton ">
+            <app-number  (addButton)="buttonArray($event)"  (displayValue)="numClickHandler($event)"></app-number>
+        </div>
+        <button class="undo" (click)="(undo())" >Undo</button>
+        <button class="redo" (click)="(redo())">Redo</button>
+        <button class="undo" (click)="(logout())">logout</button>
+    </div>
+
+</div>
+

@@ -1,0 +1,6 @@
+
+
+
+<div class="numSection">
+    <app-button [value]="button.value"   [id]="'numButton-' + button.value"  *ngFor="let button of buttonArray"  (buttonEmitter)="giveValue($event)" (buttonInfo)="giveInfo(button)"></app-button>
+</div>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Login Form Example</title>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="login-form">
+  <form [formGroup]="myForm"  (ngSubmit)="onSubmit()">
+    <h1>Login</h1>
+    <div class="content">
+      <div class="input-field">
+        <input type="text" placeholder="Username" formControlName="UserName">
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Password"  formControlName="Password" >
+      </div>
+
+    </div>
+      <button class="button" type="submit">Login</button>
+  </form>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <div class="wrapper">
+        <div class="login"> -->
+            <!-- <h2>Login</h2>
+            <form [formGroup]="myForm"  (ngSubmit)="onSubmit()">
+                <label for="name">UserName:</label>
+                <input type="text" id="name" formControlName="UserName">
+              
+
+              
+                <label for="password">Password:</label>
+                <input type="password" id="password" formControlName="Password">
+              
+                <button type="submit" >Submit</button>
+              </form> -->
+    <!-- </div>
+</div> -->
+

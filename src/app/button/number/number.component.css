@@ -1,0 +1,7 @@
+.numSection{
+    display: flex;
+    flex-wrap: wrap;
+    height: 270px;
+    width: 200px;
+    /* background-color: red; */
+}
